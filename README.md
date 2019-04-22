@@ -38,6 +38,32 @@ This journey accesses a fictitious retail banking system called MPLbank. MPLbank
 * [IBM LinuxONE](https://www.ibm.com/it-infrastructure/LinuxONE)
 * [IBM Z Mainframe](https://www.ibm.com/it-infrastructure/z)
 
+# Credentials for the workshop
+
+| Github account | Github respository | API Developer Portal account | ICP account |
+| -------------- | ------------------ | ---------------------------- | ----------- |
+| techu2019      | techu01            | techu01                      | techu01     |
+| techu2019      | techu02            | techu02                      | techu02     |
+| techu2019      | techu03            | techu03                      | techu03     |
+| techu2019      | techu04            | techu04                      | techu04     |
+| techu2019      | techu05            | techu05                      | techu05     |
+| techu2019      | techu06            | techu06                      | techu06     |
+| techu2019      | techu07            | techu07                      | techu07     |
+| techu2019      | techu08            | techu08                      | techu08     |
+| techu2019      | techu09            | techu09                      | techu09     |
+| techu2019      | techu10            | techu10                      | techu10     |
+| techu2019      | techu11            | techu11                      | techu11     |
+| techu2019      | techu12            | techu12                      | techu12     |
+| techu2019      | techu13            | techu13                      | techu13     |
+| techu2019      | techu14            | techu14                      | techu14     |
+| techu2019      | techu15            | techu15                      | techu15     |
+| techu2019      | techu16            | techu16                      | techu16     |
+| techu2019      | techu17            | techu17                      | techu17     |
+| techu2019      | techu18            | techu18                      | techu18     |
+| techu2019      | techu19            | techu19                      | techu19     |
+| techu2019      | techu20            | techu20                      | techu20     |
+
+
 # Steps
 
 <!-- https://ecotrust-canada.github.io/markdown-toc/ -->
@@ -68,61 +94,40 @@ The objective is to discover the banking application located in the *banking-app
 
 ## Part 1 - Discover the banking application
 
-1. Create a [GitHub account](https://github.com/).
+1. Launch a terminal (Command Prompt).
 
-	![alt text](images/github_signup.png "Sign up")
-	* Pick a username. This will be referenced later as "YOUR_USERNAME".
-	* Enter an email.
-	* Create a password.
-	* Click **Sign up for GitHub**.
-	* Select the plan *Unlimited public repositories for free*.
-	* A Confirmation email will be sent. Verify your email address to collaborate in Github.
+2. Start a Git Bash session.
 
-2. Fork the banking application from this GitHub repository to your own GitHub repository.
+    for x86
 
-	![alt text](images/fork.png "Fork the banking app")
-	* Click **Fork**.
-	* Github automatically forks this project from this repository *IBM/ICp-banking-microservices* to your repository *YOUR_USERNAME/ICp-banking-microservices*.
-	* Discover your forked project (your fresh banking application) in your Github repository *YOUR_USERNAME/ICp-banking-microservices*.
+    `start "" "%SYSTEMDRIVE%\Program Files (x86)\Git\bin\sh.exe" --login`
 
-3. Install the [Git command line interface](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line) to manage your GitHub repository. Git has three main commands:
-	* *git clone* is the command for creating a local copy of the source code from a GitHub repository.
-	* *git pull* is the command for pulling fresh code from a GitHub repository.
-	* *git push* is the command for pushing new code to a GitHub repository.
+    for x64
 
-4. Launch a terminal and clone your GitHub repository *ICp-banking-microservices* to create a local copy of your banking application:
+    `start "" "%PROGRAMFILES%\Git\bin\sh.exe" --login`
 
-   `git clone https://github.com/YOUR_USERNAME/ICp-banking-microservices`
-    
-	![alt text](images/clone.png "Clone the banking app")
-	
-5. Import the source code into your favorite IDE and take a look at the *banking-application* folder:
+3. Clone your GitHub repository *techu<nn>-icp-banking-microservices* to create a local copy of the banking application:
 
-	![alt text](images/banking_app_structure.png "Banking application")
-	* *app.js*: the application server code.
+   `git clone https://github.com/techu2019/techu<nn>-icp-banking-microservices`
+  	
+5. Take a look at the *banking-application* folder:
+
+   `cd techu<nn>-icp-banking-microservices/banking-application`
+   `ls -lR`
+       
+  	* *app.js*: the application server code.
 	* *public/index.html*: the application client code (banking dashboard).
 	* *public/css*: the application stylesheet.
-	* *public/js*: the JavaScript libraries. *bankingAPI.js* will be modified later to connect the banking application to a real corebanking system through API calls (part 2).
+	* *public/js*: the JavaScript libraries. 
+	* *public/js/bankingAPI.js*: will be modified later to connect to a corebanking system through API calls.
 	* *package.json*: the package dependencies file.
-	* *Dockerfile*: file to build the Docker image. it will be used later (step 2).
+	* *Dockerfile*: will be used later to build the Docker image.
 
 ## Part 2 - Subscribe to the banking API through the API Developer Portal
 
-1. Sign up for an [IBM ID] if you don't have one already.
+1. From a web browser, go to the [API Developer Portal].
 
-2. Go to the [API Developer Portal].
-
-3. Create an account if you have not done that already.
-
-	![alt text](images/createAccount.png "Create Account")
-   * Click **Create an Account**.
-   * Provide all required information. Be sure to use your IBM ID (email address) for this account.
-   * Click **Submit**.
-
-  
-   An account activation email will be sent to your registered IBM ID email. Click on the link in this email to activate your account.
-
-4. Login to your account.
+3. Log in to your API Developer portal account.
 
 5. Create a new application.
 	![alt text](images/createApplication.png "Create Application")
@@ -133,7 +138,6 @@ The objective is to discover the banking application located in the *banking-app
 	
 	Make a note of the *client ID* and *client Secret*. You will need them to access the API later.
 	![alt text](images/keyApplication.png "API Keys")
-
 
 6. Before working with the banking API, you need to subscribe to it first. Display the list of available API products.
 	![alt text](images/bankingProduct.png "Choose the default plan")
@@ -148,55 +152,63 @@ The objective is to discover the banking application located in the *banking-app
 	* Select the App that you have just created before.
 	* Click **Subscribe**.
 	
-8. Modify the *banking-application/public/js/bankingAPI.js* in your banking application.
+8. Return to your Git Bash session. Modify the *public/js/bankingAPI.js* file.
+
 	![alt text](images/client_id_secret.png "javascript code")
-	* Replace *YOUR_CLIENT_ID_HERE* by your client ID value from the IBM API developer portal.
-	* Replace *YOUR_CLIENT_SECRET_HERE* by your client Secret value from the IBM API developer portal.
+	
+	'vi public/js/bankingAPI.js'
+	
+	* Replace *YOUR_CLIENT_ID_HERE* with the client ID value from the IBM API developer application subscription.
+	* Replace *YOUR_CLIENT_SECRET_HERE* with the client Secret value from the IBM API developer application subscription.
 
 ## Part 3 - Run the banking application with Node.js
 
-1. Install these required components for your environment (Windows, Mac OS, Linux):
-	*	[Node.js](https://nodejs.org/en/): Node.js is a javascript application server and will run the banking application.
-	* 	[npm](https://www.npmjs.com/get-npm): npm resolves Node.js package dependencies. According to your operating system, npm may be distributed with Node.js.
-
-3. Launch a terminal and test if Node.Js and npm are installed in your operating system and added to the system path:
-	
-	![alt text](images/node-npm-test1.png "npm node test command")
-	* Run the command *node -v*. The version is displayed.
-	* Run the command *npm -v*. The version is displayed.
-
-
-3. In the same terminal. Go to your banking application folder:
+1. Go to the banking application directory, if you are not already.   
 
     `cd ICp-banking-microservices/banking-application`
 
-4. Install Node.Js package dependencies of the banking application using : `npm install`
-	![alt text](images/npm-install.png "npm install")
-	* As a result, dependencies are installed in your project folder.
+2. Install Node.Js package dependencies of the banking application using : 
 
-5. Run the banking application using : `node app.js` :
-	![alt text](images/node-app-js.png "node app.js")
-	* As a result, The banking application is started.
+    `npm install`
+    
+	![alt text](images/npm-install.png "npm install")
 	
-4. Launch a web browser and go to **localhost:3000**. The banking application appears.
+   As a result, dependencies are installed in your project folder.
+
+3. Run the banking application using : 
+    
+    `node app.js` :
+
+        ![alt text](images/node-app-js.png "node app.js")
+	
+   As a result, The banking application is started.
+	
+4. To view your application, open this link in a web browser: 
+
+     `http://localhost:3000` 
+   
+   The banking application appears.
     
 	![alt text](images/banking_app.png "Banking application")
 
 5. Test your application.
 
 	![alt text](images/banking_app_test.png "Banking application")
+    
     * Select a customer ID.
     * Please wait while the application calls banking data from the Mainframe through API Connect and z/OS Connect EE.
     * The result is displayed in a JSON structure.
     
-6. The banking application locally works. Stop the Node.js server with a **SIGINT (CTRL+C)** from the terminal.
+6. The banking application works locally. Stop the Node.js server with the following command:
+
+    `SIGINT (CTRL+C)`
 
 
 ## Part 4 - Push the banking application to your GitHub repository
 
 1. Add the *bankingAPI.js* file you just modified to the current content index:
 
-	`git add public/js/bankingAPI.js`
+   `git add public/js/bankingAPI.js`
 
 2. Commit the fresh code you modified to add changes to the local repository:
 
@@ -205,108 +217,58 @@ The objective is to discover the banking application located in the *banking-app
 3. Push the code you commited to transfer the last commit to your GitHub repository *ICp-banking-microservices*:
 
    `git push`
+   
+   Enter github user credentials if prompted.
 
-4. Go back to your online Github repository *ICp-banking-microservices* using the web browser. 
+4. Go back to your online Github repository *techu<nn>-icp-banking-microservices* using the web browser. 
 
-	![alt text](images/commit-push-repo.png "git push")
-	* Check that your code has been updated with commit label *Update of BankingAPI.js*
+   ![alt text](images/commit-push-repo.png "git push")
+	
+5. Check that your code has been updated with commit label *Update of BankingAPI.js*
 
 ---
 
-:thumbsup: Congratulations! Your banking application locally works and modifications have been pushed to your GitHub repository! Ready for IBM Cloud private?
+:thumbsup: Congratulations! Your banking application works locally. Modifications have been pushed to your GitHub repository! Ready for IBM Cloud private?
 
 ---
 
 # Step 2 - Build and deploy a Docker image to IBM Cloud private
 
-The objective is to build a Docker image from the banking application and then deploy it to the IBM Cloud private.
+The objective is to build a Docker image for the banking application from your github repository and then deploy it to the IBM Cloud private local docker registry.
 
-## Part 1 - Build the Docker image from the LinuxONE Community Cloud
+In this workshop, an automatic process has been set up for you to build and deploy the Docker image to ICp. 
 
-Docker can build images automatically by reading the instructions from a Dockerfile. A Dockerfile is a text document that contains all the commands a user could call on the command line to assemble an image. Using Docker build, users can create an automated build that executes several command-line instructions, step by step.
+The process is as follow:
 
-1. Create your LinuxONE virtual server to build the Docker image from the LinuxONE Community Cloud following the [virtual Server Deployment Guide](https://github.com/LinuxONE-community-cloud/technical-resources/blob/master/deploy-virtual-server.md): 
+1. Login to the IBM Cloud private portal, https://148.100.111.67:8443, with your assigned credentials,
 
-	1. You will request access to LinuxONE Community Cloud.
-	2. You will make a first time setup (select SLES12SP3)
-	3. You will deploy your LinuxONE virtual server.
-	4. You will log in to your LinuxONE virtual server using SSH.
+2. Access the catalog.
+
+   * Click on **Catalog**
+
+   ![alt text](images/icp-catalog-users.png "ICp catalog")
 	
-	As a result, you have your LinuxONE virtual server (SLES12SP3) created (**YOUR_LINUX_IP** is your LinuxONE virtual server IP Adress)
+3.  Locate the **mplbank-imagebuild** chart.
+
+   * Filer on **openmpl**
+   
+4. Click on the **mplbank-imagebuild** chart.
+
+5. Click on **Configure**.
+
+6. Fill in the following fields:
+   
+   * Release name: Your assigned ICP id (Ex: techu01)
+   * Target name space: techu 
+   * Git_repo Name:  your assigned github repository (Ex: techu01-icp-banking-microservices)
+   
+7. Click on **Install". 
+
+   This will initate a build of the banking application from the github repository you specified. The process pulls the source code from your github repository and builds the docker image based on the Dockerfile. The resulted docker image, **techu/techunn-icp-banking-microservices** , will then be deployed to the ICP Docker image repository.
 	
-	![alt text](images/linux1CC-virtual-server.png "Virtual server")
-	
-2. Once logged in with SSH, clone your fresh source code from your *YOUR_USERNAME/ICp-banking-microservices* Github repository into your LinuxONE virtual server:
+8. Click on **View Helm Release**
 
-	`git clone YOUR_USERNAME/ICp-banking-microservices`
-
-3. Take a look at the *ICp-banking-microservices/banking-application/Dockerfile* file:
-
-	`cat ICp-banking-microservices/banking-application/Dockerfile`
-
-	![alt text](images/dockerfile.png "Dockerfile")
-	* *FROM ibmcom/ibmnode*: This command gathers, from IBM's public Docker repository, a Ubuntu Linux image containing all the basic components to run a Node.js application. It will be used as a basis for our usecase. 
-	* *WORKDIR "/app"*: This command creates a directory inside our image, from which we will inject our specific files.
-	* *COPY package.json /app/*: This command copies our **package.json** file into the working directory inside our image. This file holds information about the app, most importantly the package dependencies it will need.
-	* *RUN cd /app; npm install; npm prune --production*: These commands first move our focus to the working directory, then download and install our app's required dependencies.
-	* *COPY . /app*: This command copies everything left of the app into our working directory inside the Docker image, i.e. our app's source code.
-	* *ENV NODE_ENV production* and *ENV PORT 3000*: These two commands set environment variables. The first one tells our Node.js instance that we run in production mode, and thus don't need development libraries. The other one sets the port 3000 as our main networking port.
-	* *EXPOSE 3000*: This command tells Docker to map the image's port 3000 to the operating system's port 3000. It will gives us a network access to the Docker image and thus the Node.js app.
-	* *CMD ["npm", "start"]*: This last command tells Docker what to do when we launch the image, in our case **npm start**, which will start the Node.js app.
-	
-4. Build your Docker image:
-
-	`sudo docker build -t "YOUR_USERNAME-banking-image:latest" .`
-	
-5. As a result, a Docker image is created based on your Dockerfile and your source code pulled from Github :
-
-	`sudo docker images`
-	
-6. Create manually a new container based on your fresh Docker image:
-
-	`sudo docker run -p 3000:3000 YOUR_USERNAME-banking-image`
-	
-	
-4. Launch a web browser and go to **YOUR_LINUX_IP:3000**. The banking application appears.
-    
-	![alt text](images/linux1CC-banking_app.png "Banking application")
-
-5. Test your application.
-
-	![alt text](images/linux1CC-banking-app-test.png "Banking application")
-    * Select a customer ID.
-    * Please wait while the application calls banking data from the Mainframe through API Connect and z/OS Connect EE.
-    * The result is displayed in a JSON structure.
-
-## Part 2 - Deploy the Docker image to IBM Cloud private
-
-In this Code Pattern, an default automatic process (Jenkins build) has been set up for you to deploy the Docker image to ICp. 
-
-![alt text](images/devops.png "DevOps")
-
-The Jenkins build processed as follow:
-
-1. Jenkins pulled the source code from a GitHub repository *YOUR_USERNAME/ICp-banking-microservices* like yours.
-2. Jenkins built the Docker image from the Docker file described before. It has been called **cluster68.icp:8500/codepatterns/code-pattern-icp-banking-microservices** and tagged *lastest*.
-3. Jenkins connected to ICp and then deployed the Docker image to its Docker image repository.
-	
-> NOTE: If you are practicing this pattern during an IBM event like SHARE or Think, you are authorized to practice this deployment. Otherwise, go to the next step:
->
-> 4. Copy and Paste this URL into your browser address bar : `http://URL_CICD_SERVER/deploy/GITHUB_USERNAME` 
->	
->	* Ask the URL_CICD_SERVER to the IBMer managing the lab session.
->	* Replace *GITHUB_USERNAME* with your username.
->
-> 5. Click **Enter**. The deployment is processing : 
-> 	* The process pulls your source code from your GitHub repository *YOUR_USERNAME/ICp-banking-microservices*.
-> 	* The process builds the Docker image from the Docker file described before. It has been called **YOUR_USERNAME-icp-banking-microservices** and tagged *lastest*. It will be refered as **YOUR_IMAGE_NAME**. 
-> 	* The process connects to ICp and then deploys the Docker image to its Docker image repository.
-> 	
-> 6. Wait for the successful completion message of your build: **Deployment successful**
-> ![alt text](images/deployment_githubname.png "Banking application")
-
-As a result, the banking application is now ready to be instantiated from the ICp catalog.
-
+9. When the Pod Status is **Complete**, the process is done and the docker image is built successfully.
 
 ---
 
@@ -320,66 +282,47 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 
 ## Part 1 - Discover the Helm chart from the calalog
 
-1. Subscribe to [IBM Cloud private in the Linux One Community Cloud](https://developer.ibm.com/linuxone)
-![alt text](images/0.18C.gif "ICp subscription")
-    * Click **Try IBM Cloud Private**.
-    * Fill the form and submit.
-    * Activate your account when you will receive the confirmation email.
 
-2. Login to the IBM Cloud private catalog (the access link is provided in the confirmation email) Fill credentials with yours:
+1. Access the Catalog. 
+
+2. Locate the Helm Chart called **openmplbank**.
+
+3. Click on the **openmplbank** chart.
+
+3. click on **Configure** to create your container.
+
+   ![alt text](images/icp-banking-microservices-config.png "ICp catalog")
+
+4. Configure the container:
+
+   ![alt text](images/icp-install.png "Banking service configuration")
 	
-	![alt text](images/icp_login.png "ICp Login")
-    * Replace the username by your email.
-    * Replace the password by your password.
-
-3. Click the top-right icon  from the menu to access the catalog.
-
-	![alt text](images/icp-catalog-users.png "ICp catalog")
-	* Click on **Catalog**.
-
-4. Click on the Helm Chart called **openmplbank - Banking dashboard** to see the overview of the this banking microservice.
-
-	> NOTE: If you are practicing this pattern during an IBM event like SHARE or Think, Click on the Helm Chart called **openmplbank-ibm-lab4share**
-
-	![alt text](images/icp-banking-microservices.png "ICp catalog")
-
-
-## Part 2 - Configure and install your banking microservice
-
-1. Check the chart derails and click on configure to create your container.
-
-	![alt text](images/icp-banking-microservices-config.png "ICp catalog")
-	* Click **Configure**.
-
-2. Configure the container:
-
-	![alt text](images/icp-install.png "Banking service configuration")
-	* Fill the release name with *YOUR_USERNAME* (limit of 30 characters).
-	* Select an available target namespace in the list.
-	* The image repository is already filled with the Docker image defined before: **cluster68.icp:8500/codepatterns/code-pattern-icp-banking-microservices**.
+   * Release name: Your assigned ICP id (Ex: techu01)
+   * Target name space: techu 
+   * Image:  techunn-icp-banking-microservices
 	
-	> NOTE: If you are practicing this pattern during an IBM event like SHARE or Think, fill the image repository with your **YOUR_IMAGE_NAME**.
+5. Click on **Install**. 
 
-3. Click the **Install** button. When the process is finished, click **View Helm Release**.
+6. Click on **View Helm Release**.
 
-	![alt text](images/icp-view-helm-release.png "Banking service configuration")
 	
 
 ## Part 3 - Access your banking microservice
+
 1. From the Helm release view, the container details are displayed.
 
-	![alt text](images/run-app-icp.png "Banking service configuration")
-	* Click on **Launch** to display the banking microservice.
-
+   ![alt text](images/run-app-icp.png "Banking service configuration")
+   
+   * Click on **Launch** to display the banking microservice.
 
 2. Test your application:
 	
-	![alt text](images/icp-banking-app-test.png "Banking application")
-    * Select a customer ID.
-    * Please wait during the application calls banking data from the Mainframe through API Connect and z/OS Connect EE.
-    * The result is displayed in a JSON structure.
+   ![alt text](images/icp-banking-app-test.png "Banking application")
+   
+   * Select a customer ID.
+   * Please wait during the application calls banking data from the Mainframe through API Connect and z/OS Connect EE.
+   * The result is displayed in a JSON structure.
     
-3. Your account is available for 24 hours. All your containers will removed when your account will expire.
 
 ---
 
