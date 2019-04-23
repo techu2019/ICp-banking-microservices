@@ -88,6 +88,7 @@ This journey accesses a fictitious retail banking system called MPLbank. MPLbank
 
 ---
 
+
 # Step 1 - Discover and locally run the banking application
 
 The objective is to discover the banking application located in the *banking-application* folder. This application is a Node.js application. It will be locally tested before packaging it into a Docker image for IBM Cloud private.
@@ -96,16 +97,6 @@ The objective is to discover the banking application located in the *banking-app
 
 1. Launch a terminal (Command Prompt).
 
-2. Start a Git Bash session.
-
-    for x86
-
-    `start "" "%SYSTEMDRIVE%\Program Files (x86)\Git\bin\sh.exe" --login`
-
-    for x64
-
-    `start "" "%PROGRAMFILES%\Git\bin\sh.exe" --login`
-
 3. Clone your GitHub repository *techu<nn>-icp-banking-microservices* to create a local copy of the banking application:
 
    `git clone https://github.com/techu2019/techu<nn>-icp-banking-microservices`
@@ -113,7 +104,7 @@ The objective is to discover the banking application located in the *banking-app
 5. Take a look at the *banking-application* folder:
 
    `cd techu<nn>-icp-banking-microservices/banking-application`
-   `ls -lR`
+   `dir `
        
   	* *app.js*: the application server code.
 	* *public/index.html*: the application client code (banking dashboard).
@@ -122,44 +113,70 @@ The objective is to discover the banking application located in the *banking-app
 	* *public/js/bankingAPI.js*: will be modified later to connect to a corebanking system through API calls.
 	* *package.json*: the package dependencies file.
 	* *Dockerfile*: will be used later to build the Docker image.
-
+	
 ## Part 2 - Subscribe to the banking API through the API Developer Portal
 
-1. From a web browser, go to the [API Developer Portal].
+1. Sign up for an [IBM ID] if you don't have one already.
 
-3. Log in to your API Developer portal account.
+2. Go to the [API Developer Portal].
+
+3. Create an account if you have not done that already.
+
+   ![alt text](images/createAccount.png "Create Account")
+   
+   * Click **Create an Account**.
+   
+   * Provide all required information. Be sure to use your IBM ID (email address) for this account.
+   
+   * Click **Submit**.
+  
+   An account activation email will be sent to your registered IBM ID email. Click on the link in this email to activate your account.
+
+4. Login to your account.
 
 5. Create a new application.
-	![alt text](images/createApplication.png "Create Application")
-	* Click **Apps** from the menu.
-	* Click **Create new App**.
-	* Fill in all the required fields.
-	* Click **Submit**.
+   ![alt text](images/createApplication.png "Create Application")
+   
+   * Click **Apps** from the menu.
+   
+   * Click **Create new App**.
+   
+   * Fill in all the required fields.
+   
+   * Click **Submit**.
 	
-	Make a note of the *client ID* and *client Secret*. You will need them to access the API later.
-	![alt text](images/keyApplication.png "API Keys")
+   Make a note of the *client ID* and *client Secret*. You will need them to access the API later.
+
+   ![alt text](images/keyApplication.png "API Keys")
 
 6. Before working with the banking API, you need to subscribe to it first. Display the list of available API products.
-	![alt text](images/bankingProduct.png "Choose the default plan")
-	* Click **API Products** from the top menu.
-	* Click **Banking Product** in the list.
+   
+   ![alt text](images/bankingProduct.png "Choose the default plan")
+
+   * Click **API Products** from the top menu.
+   
+   * Click **Banking Product** in the list.
 
 7. Subscribe to the Banking API.
-	![alt text](images/APISubscription.png "Subscribe")
-	* Click **Subscribe** to the Default Plan.
 	
-	![alt text](images/APISubscription2.png "Banking Product")
-	* Select the App that you have just created before.
-	* Click **Subscribe**.
+   ![alt text](images/APISubscription.png "Subscribe")
+   
+   * Click **Subscribe** to the Default Plan.
 	
-8. Return to your Git Bash session. Modify the *public/js/bankingAPI.js* file.
+   ![alt text](images/APISubscription2.png "Banking Product")
 
-	![alt text](images/client_id_secret.png "javascript code")
+   * Select the App that you have just created before.
+
+   * Click **Subscribe**.
 	
-	'vi public/js/bankingAPI.js'
-	
-	* Replace *YOUR_CLIENT_ID_HERE* with the client ID value from the IBM API developer application subscription.
-	* Replace *YOUR_CLIENT_SECRET_HERE* with the client Secret value from the IBM API developer application subscription.
+8. Modify the *banking-application/public/js/bankingAPI.js* in your banking application.
+
+   ![alt text](images/client_id_secret.png "javascript code")
+
+   * Replace *YOUR_CLIENT_ID_HERE* by your client ID value from the IBM API developer portal.
+
+   * Replace *YOUR_CLIENT_SECRET_HERE* by your client Secret value from the IBM API developer portal.	
+
 
 ## Part 3 - Run the banking application with Node.js
 
@@ -281,7 +298,6 @@ The process is as follow:
 The objective is to discover the IBM Cloud private catalog in order to instantiate a container from your Docker image containing your banking application. In this way, you will be able to test your banking application from ICp.
 
 ## Part 1 - Discover the Helm chart from the calalog
-
 
 1. Access the Catalog. 
 
