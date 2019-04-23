@@ -42,26 +42,26 @@ This journey accesses a fictitious retail banking system called MPLbank. MPLbank
 
 | Github account | Github respository | API Developer Portal account | ICP account |
 | -------------- | ------------------ | ---------------------------- | ----------- |
-| techu2019      | techu01            | techu01                      | techu01     |
-| techu2019      | techu02            | techu02                      | techu02     |
-| techu2019      | techu03            | techu03                      | techu03     |
-| techu2019      | techu04            | techu04                      | techu04     |
-| techu2019      | techu05            | techu05                      | techu05     |
-| techu2019      | techu06            | techu06                      | techu06     |
-| techu2019      | techu07            | techu07                      | techu07     |
-| techu2019      | techu08            | techu08                      | techu08     |
-| techu2019      | techu09            | techu09                      | techu09     |
-| techu2019      | techu10            | techu10                      | techu10     |
-| techu2019      | techu11            | techu11                      | techu11     |
-| techu2019      | techu12            | techu12                      | techu12     |
-| techu2019      | techu13            | techu13                      | techu13     |
-| techu2019      | techu14            | techu14                      | techu14     |
-| techu2019      | techu15            | techu15                      | techu15     |
-| techu2019      | techu16            | techu16                      | techu16     |
-| techu2019      | techu17            | techu17                      | techu17     |
-| techu2019      | techu18            | techu18                      | techu18     |
-| techu2019      | techu19            | techu19                      | techu19     |
-| techu2019      | techu20            | techu20                      | techu20     |
+| techu2019      | techu01            | techu01@outlook.com          | techu01     |
+| techu2019      | techu02            | techu02@outlook.com          | techu02     |
+| techu2019      | techu03            | techu03@outlook.com          | techu03     |
+| techu2019      | techu04            | techu04@outlook.com          | techu04     |
+| techu2019      | techu05            | techu05@outlook.com          | techu05     |
+| techu2019      | techu06            | techu06@outlook.com          | techu06     |
+| techu2019      | techu07            | techu07@outlook.com          | techu07     |
+| techu2019      | techu08            | techu08@outlook.com          | techu08     |
+| techu2019      | techu09            | techu09@outlook.com          | techu09     |
+| techu2019      | techu10            | techu10@outlook.com          | techu10     |
+| techu2019      | techu11            | techu11@outlook.com          | techu11     |
+| techu2019      | techu12            | techu12@outlook.com          | techu12     |
+| techu2019      | techu13            | techu13@outlook.com          | techu13     |
+| techu2019      | techu14            | techu14@outlook.com          | techu14     |
+| techu2019      | techu15            | techu15@outlook.com          | techu15     |
+| techu2019      | techu16            | techu16@outlook.com          | techu16     |
+| techu2019      | techu17            | techu17@outlook.com          | techu17     |
+| techu2019      | techu18            | techu18@outlook.com          | techu18     |
+| techu2019      | techu19            | techu19@outlook.com          | techu19     |
+| techu2019      | techu20            | techu20@outlook.com          | techu20     |
 
 
 # Steps
