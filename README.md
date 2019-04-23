@@ -77,8 +77,7 @@ This journey accesses a fictitious retail banking system called MPLbank. MPLbank
 
 ### Step 2 - Build and deploy a Docker image to IBM Cloud private
 
-- [Part 1 - Build the Docker image from the LinuxONE Community Cloud](#part-1---build-the-docker-image-from-the-LinuxONE-community-cloud)
-- [Part 2 - Deploy the Docker image to IBM Cloud private](#part-2---deploy-the-docker-image-to-ibm-cloud-private)
+- [Part 1 - Deploy the Docker image to IBM Cloud private](#part-2---deploy-the-docker-image-to-ibm-cloud-private)
 
 ### Step 3 - Instantiate the banking microservice from the IBM Cloud private catalog
 
@@ -251,6 +250,9 @@ The objective is to discover the banking application located in the *banking-app
 
 # Step 2 - Build and deploy a Docker image to IBM Cloud private
 
+## Part 1 - Deploy the Docker image to IBM Cloud private
+
+
 The objective is to build a Docker image for the banking application from your github repository and then deploy it to the IBM Cloud private local docker registry.
 
 In this workshop, an automatic process has been set up for you to build and deploy the Docker image to ICp. 
@@ -308,8 +310,10 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 3. click on **Configure** to create your container.
 
    ![alt text](images/icp-banking-microservices-config.png "ICp catalog")
+   
+## Part 2 - Configure and install your banking microservice
 
-4. Configure the container:
+1. Configure the container:
 
    ![alt text](images/icp-install.png "Banking service configuration")
 	
@@ -317,10 +321,9 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
    * Target name space: techu 
    * Image:  techunn-icp-banking-microservices
 	
-5. Click on **Install**. 
+2. Click on **Install**. 
 
-6. Click on **View Helm Release**.
-
+3. Click on **View Helm Release**.
 	
 
 ## Part 3 - Access your banking microservice
