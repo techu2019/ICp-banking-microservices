@@ -278,17 +278,17 @@ The process is as follow:
 
 6. Fill in the following fields:
    
-   * Release name: Your assigned ICP id (Ex: techu01)
+   * Release name: techu<nn>-img
    * Target name space: techu 
-   * Git_repo Name:  your assigned github repository (Ex: techu01-icp-banking-microservices)
+   * Git_repo Name:  techu<nn>-icp-banking-microservices)
    
-7. Click on **Install". 
+7. Click on **Install".
 
-   This will initate a build of the banking application from the github repository you specified. The process pulls the source code from your github repository and builds the docker image based on the Dockerfile. The resulted docker image, **techu/techunn-icp-banking-microservices** , will then be deployed to the ICP Docker image repository.
+   This will initate a build of the banking application from the github repository you specified. The process pulls the source code from your github repository and builds the docker image based on the Dockerfile. The resulted docker image, **techu/techu<nn>-icp-banking-microservices** , will then be deployed to the ICP Docker image repository.
 	
-8. Click on **View Helm Release**
+8. Click on **View Helm Release**.
 
-9. When the Pod Status is **Complete**, the process is done and the docker image is built successfully.
+9. When the Pod Status is **Completed**, the process is done.  The docker image is built successfully.
 
 ---
 
@@ -318,9 +318,9 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 
    ![alt text](images/icp-install.png "Banking service configuration")
 	
-   * Release name: Your assigned ICP id (Ex: techu01)
+   * Release name: techu<nn>-app
    * Target name space: techu 
-   * Image:  techunn-icp-banking-microservices
+   * Image:  techu<nn>-icp-banking-microservices
 	
 2. Click on **Install**. 
 
