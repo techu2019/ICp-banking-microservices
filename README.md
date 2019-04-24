@@ -194,9 +194,9 @@ The objective is to discover the banking application located in the *banking-app
 
 3. Run the banking application using : 
     
-    `node app.js` :
+    `node app.js`
 
-        ![alt text](images/node-app-js.png "node app.js")
+  ![alt text](images/node-app-js.png "node app.js")
 	
    As a result, The banking application is started.
 	
