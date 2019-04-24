@@ -42,26 +42,26 @@ This journey accesses a fictitious retail banking system called MPLbank. MPLbank
 
 | Github account | Github respository                 | API Developer Portal account | ICP account |
 | -------------- | ---------------------------------  | ---------------------------- | ----------- |
-| techu2019      | techu01-icp-banking-microservices  | techu01@outlook.com          | techu01     |
-| techu2019      | techu02-icp-banking-microservices  | techu02@outlook.com          | techu02     |
-| techu2019      | techu03-icp-banking-microservices  | techu03@outlook.com          | techu03     |
-| techu2019      | techu04-icp-banking-microservices  | techu04@outlook.com          | techu04     |
-| techu2019      | techu05-icp-banking-microservices  | techu05@outlook.com          | techu05     |
-| techu2019      | techu06-icp-banking-microservices  | techu06@outlook.com          | techu06     |
-| techu2019      | techu07-icp-banking-microservices  | techu07@outlook.com          | techu07     |
-| techu2019      | techu08-icp-banking-microservices  | techu08@outlook.com          | techu08     |
-| techu2019      | techu09-icp-banking-microservices  | techu09@outlook.com          | techu09     |
-| techu2019      | techu10-icp-banking-microservices  | techu10@outlook.com          | techu10     |
-| techu2019      | techu11-icp-banking-microservices  | techu11@outlook.com          | techu11     |
-| techu2019      | techu12-icp-banking-microservices  | techu12@outlook.com          | techu12     |
-| techu2019      | techu13-icp-banking-microservices  | techu13@outlook.com          | techu13     |
-| techu2019      | techu14-icp-banking-microservices  | techu14@outlook.com          | techu14     |
-| techu2019      | techu15-icp-banking-microservices  | techu15@outlook.com          | techu15     |
-| techu2019      | techu16-icp-banking-microservices  | techu16@outlook.com          | techu16     |
-| techu2019      | techu17-icp-banking-microservices  | techu17@outlook.com          | techu17     |
-| techu2019      | techu18-icp-banking-microservices  | techu18@outlook.com          | techu18     |
-| techu2019      | techu19-icp-banking-microservices  | techu19@outlook.com          | techu19     |
-| techu2019      | techu20-icp-banking-microservices  | techu20@outlook.com          | techu20     |
+| techu2019      | techu01-icp-banking-microservices  | zcloud.01@outlook.com        | techu01     |
+| techu2019      | techu02-icp-banking-microservices  | zcloud.02@outlook.com        | techu02     |
+| techu2019      | techu03-icp-banking-microservices  | zcloud.03@outlook.com        | techu03     |
+| techu2019      | techu04-icp-banking-microservices  | zcloud.04@outlook.com        | techu04     |
+| techu2019      | techu05-icp-banking-microservices  | zcloud.05@outlook.com        | techu05     |
+| techu2019      | techu06-icp-banking-microservices  | zcloud.06@outlook.com        | techu06     |
+| techu2019      | techu07-icp-banking-microservices  | zcloud.07@outlook.com        | techu07     |
+| techu2019      | techu08-icp-banking-microservices  | zcloud.08@outlook.com        | techu08     |
+| techu2019      | techu09-icp-banking-microservices  | zcloud.09@outlook.com        | techu09     |
+| techu2019      | techu10-icp-banking-microservices  | zcloud.10@outlook.com        | techu10     |
+| techu2019      | techu11-icp-banking-microservices  | zcloud.11@outlook.com        | techu11     |
+| techu2019      | techu12-icp-banking-microservices  | zcloud.12@outlook.com        | techu12     |
+| techu2019      | techu13-icp-banking-microservices  | zcloud.13@outlook.com        | techu13     |
+| techu2019      | techu14-icp-banking-microservices  | zcloud.14@outlook.com        | techu14     |
+| techu2019      | techu15-icp-banking-microservices  | zcloud.15@outlook.com        | techu15     |
+| techu2019      | techu16-icp-banking-microservices  | zcloud.16@outlook.com        | techu16     |
+| techu2019      | techu17-icp-banking-microservices  | zcloud.17@outlook.com        | techu17     |
+| techu2019      | techu18-icp-banking-microservices  | zcloud.18@outlook.com        | techu18     |
+| techu2019      | techu19-icp-banking-microservices  | zcloud.19@outlook.com        | techu19     |
+| techu2019      | techu20-icp-banking-microservices  | zcloud.20@outlook.com        | techu20     |
 
 
 # Steps
