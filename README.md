@@ -103,6 +103,7 @@ The objective is to discover the banking application located in the *banking-app
 5. Take a look at the *banking-application* folder:
 
    `cd techu<nn>-icp-banking-microservices/banking-application`
+   
    `dir `
        
   	* *app.js*: the application server code.
