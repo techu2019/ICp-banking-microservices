@@ -268,11 +268,10 @@ The process is as follow:
 
    ![alt text](images/icp-catalog-users.png "ICp catalog")
 	
-3. Locate the **mplbank-imagebuild** chart.
+3. Locate the **mplbank-imagebuild** helm chart.
 
    * Enter **openmpl** in search box  
-   * click on  **Filter**
-   
+     
 4. Click on the **mplbank-imagebuild** chart.
 
 5. Click on **Configure**.
