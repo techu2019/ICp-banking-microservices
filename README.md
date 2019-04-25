@@ -40,28 +40,28 @@ This journey accesses a fictitious retail banking system called MPLbank. MPLbank
 
 # Credentials for the workshop
 
-| Github account | Github respository                 | API Developer Portal account | ICP account |
-| -------------- | ---------------------------------  | ---------------------------- | ----------- |
-| techu2019      | techu01-icp-banking-microservices  | zcloud.01@outlook.com        | techu01     |
-| techu2019      | techu02-icp-banking-microservices  | zcloud.02@outlook.com        | techu02     |
-| techu2019      | techu03-icp-banking-microservices  | zcloud.03@outlook.com        | techu03     |
-| techu2019      | techu04-icp-banking-microservices  | zcloud.04@outlook.com        | techu04     |
-| techu2019      | techu05-icp-banking-microservices  | zcloud.05@outlook.com        | techu05     |
-| techu2019      | techu06-icp-banking-microservices  | zcloud.06@outlook.com        | techu06     |
-| techu2019      | techu07-icp-banking-microservices  | zcloud.07@outlook.com        | techu07     |
-| techu2019      | techu08-icp-banking-microservices  | zcloud.08@outlook.com        | techu08     |
-| techu2019      | techu09-icp-banking-microservices  | zcloud.09@outlook.com        | techu09     |
-| techu2019      | techu10-icp-banking-microservices  | zcloud.10@outlook.com        | techu10     |
-| techu2019      | techu11-icp-banking-microservices  | zcloud.11@outlook.com        | techu11     |
-| techu2019      | techu12-icp-banking-microservices  | zcloud.12@outlook.com        | techu12     |
-| techu2019      | techu13-icp-banking-microservices  | zcloud.13@outlook.com        | techu13     |
-| techu2019      | techu14-icp-banking-microservices  | zcloud.14@outlook.com        | techu14     |
-| techu2019      | techu15-icp-banking-microservices  | zcloud.15@outlook.com        | techu15     |
-| techu2019      | techu16-icp-banking-microservices  | zcloud.16@outlook.com        | techu16     |
-| techu2019      | techu17-icp-banking-microservices  | zcloud.17@outlook.com        | techu17     |
-| techu2019      | techu18-icp-banking-microservices  | zcloud.18@outlook.com        | techu18     |
-| techu2019      | techu19-icp-banking-microservices  | zcloud.19@outlook.com        | techu19     |
-| techu2019      | techu20-icp-banking-microservices  | zcloud.20@outlook.com        | techu20     |
+| Github account | Github respository                  | API Developer Portal account | ICP account |
+| -------------- | ----------------------------------  | ---------------------------- | ----------- |
+| zcloud-01      | zcloud01-icp-banking-microservices  | zcloud.01@outlook.com        | techu01     |
+| zcloud-01      | zcloud02-icp-banking-microservices  | zcloud.02@outlook.com        | techu02     |
+| zcloud-01      | zcloud03-icp-banking-microservices  | zcloud.03@outlook.com        | techu03     |
+| zcloud-01      | zcloud04-icp-banking-microservices  | zcloud.04@outlook.com        | techu04     |
+| zcloud-01      | zcloud05-icp-banking-microservices  | zcloud.05@outlook.com        | techu05     |
+| zcloud-01      | zcloud06-icp-banking-microservices  | zcloud.06@outlook.com        | techu06     |
+| zcloud-01      | zcloud07-icp-banking-microservices  | zcloud.07@outlook.com        | techu07     |
+| zcloud-01      | zcloud08-icp-banking-microservices  | zcloud.08@outlook.com        | techu08     |
+| zcloud-01      | zcloud09-icp-banking-microservices  | zcloud.09@outlook.com        | techu09     |
+| zcloud-01      | zcloud10-icp-banking-microservices  | zcloud.10@outlook.com        | techu10     |
+| zcloud-01      | zcloud11-icp-banking-microservices  | zcloud.11@outlook.com        | techu11     |
+| zcloud-01      | zcloud12-icp-banking-microservices  | zcloud.12@outlook.com        | techu12     |
+| zcloud-01      | zcloud13-icp-banking-microservices  | zcloud.13@outlook.com        | techu13     |
+| zcloud-01      | zcloud14-icp-banking-microservices  | zcloud.14@outlook.com        | techu14     |
+| zcloud-01      | zcloud15-icp-banking-microservices  | zcloud.15@outlook.com        | techu15     |
+| zcloud-01      | zcloud16-icp-banking-microservices  | zcloud.16@outlook.com        | techu16     |
+| zcloud-01      | zcloud17-icp-banking-microservices  | zcloud.17@outlook.com        | techu17     |
+| zcloud-01      | zcloud18-icp-banking-microservices  | zcloud.18@outlook.com        | techu18     |
+| zcloud-01      | zcloud19-icp-banking-microservices  | zcloud.19@outlook.com        | techu19     |
+| zcloud-01      | zcloud20-icp-banking-microservices  | zcloud.20@outlook.com        | techu20     |
 
 
 # Steps
@@ -96,13 +96,13 @@ The objective is to discover the banking application located in the *banking-app
 
 1. Launch a terminal (Command Prompt).
 
-3. Clone your GitHub repository *techu<nn>-icp-banking-microservices* to create a local copy of the banking application:
+3. Clone your GitHub repository *zcloud.<nn>-icp-banking-microservices* to create a local copy of the banking application:
 
-   `git clone https://github.com/techu2019/techu<nn>-icp-banking-microservices`
+   `git clone https://github.com/techu2019/zcloud.<nn>-icp-banking-microservices`
   	
 5. Take a look at the *banking-application* folder:
 
-   `cd techu<nn>-icp-banking-microservices/banking-application`
+   `cd zcloud.<nn>-icp-banking-microservices/banking-application`
    
    `dir `
        
@@ -237,7 +237,7 @@ The objective is to discover the banking application located in the *banking-app
    
    Enter github user credentials if prompted.
 
-4. Go back to your online Github repository *techu<nn>-icp-banking-microservices* using the web browser. 
+4. Go back to your online Github repository *zcloud.<nn>-icp-banking-microservices* using the web browser. 
 
    ![alt text](images/commit-push-repo.png "git push")
 	
@@ -278,13 +278,13 @@ The process is as follow:
 
 6. Fill in the following fields:
    
-   * Release name: techu<nn>-img
+   * Release name: zcloud<nn>-img
    * Target name space: techu 
-   * Git_repo Name:  techu<nn>-icp-banking-microservices)
+   * Git_repo Name:  zcloud.<nn>-icp-banking-microservices
    
 7. Click on **Install".
 
-   This will initate a build of the banking application from the github repository you specified. The process pulls the source code from your github repository and builds the docker image based on the Dockerfile. The resulted docker image, **techu/techu<nn>-icp-banking-microservices** , will then be deployed to the ICP Docker image repository.
+   This will initate a build of the banking application from the github repository you specified. The process pulls the source code from your github repository and builds the docker image based on the Dockerfile. The resulted docker image, **techu/zcloud.01-icp-banking-microservices** , will then be deployed to the ICP Docker image repository.
 	
 8. Click on **View Helm Release**.
 
@@ -318,9 +318,9 @@ The objective is to discover the IBM Cloud private catalog in order to instantia
 
    ![alt text](images/icp-install.png "Banking service configuration")
 	
-   * Release name: techu<nn>-app
+   * Release name: zcloud<nn>-app
    * Target name space: techu 
-   * Image:  techu<nn>-icp-banking-microservices
+   * Image:  cluster67.icp:8500/techu/zcloud.<nn>-icp-banking-microservices
 	
 2. Click on **Install**. 
 
@@ -362,4 +362,4 @@ This code pattern is licensed under the Apache Software License, Version 2.  Sep
 * [IBM Cloud private - Knowledge Center](https://www.ibm.com/support/knowledgecenter/en/SSBS6K/product_welcome_cloud_private.html)
 
 [IBM ID]: https://www.ibm.com/account/us-en/signup/register.html
-[API Developer Portal]: https://developer-contest-spbodieusibmcom-prod.developer.us.apiconnect.ibmcloud.com/
+[API Developer Portal]: https://developer-contest-spbodieusibmcom-prod.developer.us.apicoect.ibmcloud.com/
